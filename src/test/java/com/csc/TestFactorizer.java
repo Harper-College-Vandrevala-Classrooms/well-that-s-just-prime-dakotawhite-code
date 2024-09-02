@@ -1,7 +1,6 @@
 package com.csc;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -41,6 +40,6 @@ public class TestFactorizer {
 
     @Test
     public void testLargeNumber() {
-        assertEquals("2,2,3,3,7", factorizer.prime_factors(252), "Factorization of 840 should be '2,2,3,3,7'");
+        assertEquals("2,2,3,3,7", factorizer.prime_factors(252), "Factorization of 252 should be '2,2,3,3,7'");
     }
 }
