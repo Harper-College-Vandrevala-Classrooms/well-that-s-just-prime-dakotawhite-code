@@ -42,4 +42,25 @@ public class TestFactorizer {
     public void testLargeNumber() {
         assertEquals("2,2,3,3,7", factorizer.prime_factors(252), "Factorization of 252 should be '2,2,3,3,7'");
     }
+
+    // portfolio add-on for is it prime?
+    @Test
+    public void testprime() {
+        assertEquals(false, factorizer.prime(1));
+        assertEquals(true, factorizer.prime(2));
+        assertEquals(false, factorizer.prime(4));
+        assertEquals(true, factorizer.prime(13));
+        assertEquals(false, factorizer.prime(56));
+        assertEquals(true, factorizer.prime(293));
+    }
+    // portfolio add-on for is it composite?
+    @Test
+    public void testcomposite() {
+        assertEquals(false, factorizer.composite(1));
+        assertEquals(false, factorizer.composite(2));
+        assertEquals(true, factorizer.composite(4));
+        assertEquals(false, factorizer.composite(13));
+        assertEquals(true, factorizer.composite(56));
+        assertEquals(false, factorizer.composite(293));
+    }
 }
